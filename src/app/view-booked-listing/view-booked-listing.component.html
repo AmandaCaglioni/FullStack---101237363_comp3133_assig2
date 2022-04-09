@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+      <tr >
+        <th scope="col">#</th>
+        <th scope="col">title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Street</th>
+        <th scope="col">City</th>
+        <th scope="col">Postal Code</th>
+        <th scope="col">Price</th>
+        <th scope="col">Email</th>
+        <th scope="col">Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let item of data">
+        <td scope="row">{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.street}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.postalCode}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.username}}</td>
+      </tr>
+    </tbody>
+  </table>

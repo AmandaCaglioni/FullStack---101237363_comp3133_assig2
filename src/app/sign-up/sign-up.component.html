@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign Up</h1>
+                    <h6>Create Account</h6>
+                </div>
+                <form #userPost = "ngForm" (ngSubmit) = "onSubmit(userPost.value)">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="firstname" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="lastname" aria-describedby="emailHelp" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Type</label>
+                        <input type="text" class="form-control" name="type" ngModel>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+                <a style="color: white; margin-top: 10px; text-decoration: none;" routerLink = "/login">Already have an account? Login</a>
+            </div>
+        </div>
+    </div>
+</div>

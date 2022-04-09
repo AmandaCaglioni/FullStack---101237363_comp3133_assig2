@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Add Booking</h1>
+                </div>
+                <form #userPost = "ngForm" (ngSubmit) = "onSubmit(userPost.value)">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Listing Id</label>
+                        <input type="text" class="form-control" name="id" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Booking Id</label>
+                        <input type="text" class="form-control" name="bid" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Booking Date</label>
+                        <input type="text" class="form-control" name="date" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Booking Start</label>
+                        <input type="text" class="form-control" name="start" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Booking end</label>
+                        <input type="text" class="form-control" name="end" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" ngModel>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+                 </div>
+        </div>
+    </div>
+</div>
